@@ -1,4 +1,5 @@
 import React from 'react'
+import { Container } from 'react-bootstrap'
 import { useParams } from 'react-router-dom'
 
 function Product() {
@@ -7,7 +8,7 @@ function Product() {
     const { slug } = useParams()
 
     return (
-        <div>{ slug }</div>
+        <Container>{ slug }</Container>
     )
 }
 

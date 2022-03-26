@@ -6,9 +6,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Home from './pages/Home'
 import Product from './pages/Product'
+import MainNavbar from './components/common/MainNavbar'
 
 ReactDOM.render(
   <React.StrictMode>
+    <MainNavbar />
     <BrowserRouter>
     <Routes>
       <Route path="/" element={<Home />}></Route>
