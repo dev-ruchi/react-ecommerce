@@ -10,6 +10,25 @@ function Product() {
         return products.find(item => item.slug === slug)
     }
 
+    function addToCard() {
+        let cartItems = []
+
+        if (localStorage.getItem('cartItems')) {
+            cartItems = JSON.parse(localStorage.getItem('cartItems'))
+        }
+
+        if (cartItems.findIndex(id => id === product.id) > -1) {
+            alert("Item already exists in the cart.")
+            return;
+        }
+
+        cartItems.push(product.id)
+
+        localStorage.setItem('cartItems', JSON.stringify(cartItems))
+
+        alert("Item saved to the cart")
+    }
+
     return (
         <div className='container mt-10 mx-auto'>
             <div className='px-2 md:grid grid-cols-3 gap-8'>
@@ -20,7 +39,7 @@ function Product() {
                     <h3 className='text-4xl mb-10'>{product.name}</h3>
                     <p className='mb-10'>{product.description}</p>
                     <p className='text-xl font-bold mb-10'>{product.price}</p>
-                    <button className='px-5 py-3 bg-green-600 text-white mb-10'>Add to Cart</button>
+                    <button onClick={addToCard} className='px-5 py-3 bg-green-600 text-white mb-10'>Add to Cart</button>
 
                     <ul>
                         {
