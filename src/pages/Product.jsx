@@ -10,8 +10,6 @@ function Product() {
         return products.find(item => item.slug === slug)
     }
 
-
-
     return (
         <div className='container mt-10 mx-auto'>
             <div className='grid grid-cols-3 gap-8'>
@@ -25,7 +23,11 @@ function Product() {
                     <button className='px-5 py-3 bg-green-600 text-white mb-10'>Add to Cart</button>
 
                     <ul>
-                        { product.offers.map(offer => <li className='font-semibold list-disc list-inside'>{offer}</li>) }
+                        {
+                            product.offers.map(
+                                offer => <li className='font-semibold list-disc list-inside'>{offer}</li>
+                            )
+                        }
                     </ul>
                 </div>
             </div>
