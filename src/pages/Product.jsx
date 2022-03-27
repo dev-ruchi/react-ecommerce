@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Container } from 'react-bootstrap'
+import { Container, Row, Col, Button } from 'react-bootstrap'
 import { useParams } from 'react-router-dom'
 import products from '../data/products'
 
@@ -8,14 +8,26 @@ function Product() {
     const [product, setProduct] = useState(getProuctFromSlug())
 
     function getProuctFromSlug() {
-       return products.find(item => item.slug === slug)
+        return products.find(item => item.slug === slug)
     }
 
 
 
     return (
         <Container>
-            
+            <Row>
+                <Col md={4}>
+                    <img src={product.image} />
+                </Col>
+                <Col md={{ span: 4, offset: 2 }}>
+                    <div>
+                        <h3>{product.name}</h3>
+                        <p>{product.description}</p>
+                        <p><strong>{product.price}</strong></p>
+                        <Button variant='success'>Add to Cart</Button>
+                    </div>
+                </Col>
+            </Row>
         </Container>
     )
 }
