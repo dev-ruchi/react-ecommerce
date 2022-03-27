@@ -2,11 +2,11 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import 'bootstrap/dist/css/bootstrap.min.css';
+import './index.css';
 
 import Home from './pages/Home'
 import Product from './pages/Product'
-import MainNavbar from './components/common/MainNavbar'
+import MainNavbar from './components/common/Navbar'
 
 ReactDOM.render(
   <React.StrictMode>

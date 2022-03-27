@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import { Container, Row, Col, Button } from 'react-bootstrap'
 import { useParams } from 'react-router-dom'
 import products from '../data/products'
 
