@@ -5,7 +5,12 @@ const products = [
         "slug": "iphone-13",
         "price": "$1200",
         "description": "Ea adipisicing cillum reprehenderit velit magna irure tempor commodo elit aliquip cillum fugiat sint. Fugiat mollit culpa consectetur qui reprehenderit commodo laborum.",
-        "image": "https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-13-01.jpg"
+        "image": "https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-13-01.jpg",
+        "offers": [
+            "10% disount on HDFC credit card",
+            "5% discount on Axis bank cards",
+            "Exchange your old phone for upto $100"
+        ]
     },
     {
         "id": 2,

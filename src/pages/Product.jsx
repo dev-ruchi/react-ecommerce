@@ -13,21 +13,23 @@ function Product() {
 
 
     return (
-        <Container>
-            <Row>
-                <Col md={4}>
+        <div className='container mt-10 mx-auto'>
+            <div className='grid grid-cols-3 gap-8'>
+                <div className='col-span-1'>
                     <img src={product.image} />
-                </Col>
-                <Col md={{ span: 4, offset: 2 }}>
-                    <div>
-                        <h3>{product.name}</h3>
-                        <p>{product.description}</p>
-                        <p><strong>{product.price}</strong></p>
-                        <Button variant='success'>Add to Cart</Button>
-                    </div>
-                </Col>
-            </Row>
-        </Container>
+                </div>
+                <div className='col-span-2'>
+                    <h3 className='text-4xl mb-10'>{product.name}</h3>
+                    <p className='mb-10'>{product.description}</p>
+                    <p className='text-xl font-bold mb-10'>{product.price}</p>
+                    <button className='px-5 py-3 bg-green-600 text-white mb-10'>Add to Cart</button>
+
+                    <ul>
+                        { product.offers.map(offer => <li className='font-semibold list-disc list-inside'>{offer}</li>) }
+                    </ul>
+                </div>
+            </div>
+        </div>
     )
 }
 
