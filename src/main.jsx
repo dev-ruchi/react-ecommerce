@@ -6,12 +6,12 @@ import './index.css';
 
 import Home from './pages/Home'
 import Product from './pages/Product'
-import MainNavbar from './components/common/Navbar'
+import Navbar from './components/common/Navbar'
 
 ReactDOM.render(
   <React.StrictMode>
-    <MainNavbar />
     <BrowserRouter>
+    <Navbar />
     <Routes>
       <Route path="/" element={<Home />}></Route>
       <Route path="/:slug" element={<Product />} />

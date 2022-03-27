@@ -18,7 +18,8 @@ const products = [
         "slug": "samsung-s22-ultra",
         "price": "$1500",
         "description": "Aliquip consectetur excepteur qui aliquip excepteur exercitation deserunt pariatur dolore fugiat ullamco sunt esse. Qui ad dolor sunt minim laboris consectetur aliquip ad do irure excepteur exercitation.",
-        "image": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s22-ultra-5g.jpg"
+        "image": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s22-ultra-5g.jpg",
+        "offers": []
     },
     {
         "id": 3,
@@ -26,7 +27,8 @@ const products = [
         "slug": "speaker",
         "price": "100$",
         "description": "Occaecat dolor reprehenderit sunt tempor amet proident adipisicing quis nisi eu sunt proident. Officia aliqua minim fugiat est ad ut qui aute. Veniam consectetur dolor cupidatat minim elit aute aliquip quis laborum duis labore.",
-        "image": "https://m.media-amazon.com/images/I/512syhuJD7L._SL1000_.jpg"
+        "image": "https://m.media-amazon.com/images/I/512syhuJD7L._SL1000_.jpg",
+        "offers": []
     }
 ]
 

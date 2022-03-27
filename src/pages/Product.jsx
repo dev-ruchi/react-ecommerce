@@ -25,7 +25,7 @@ function Product() {
                     <ul>
                         {
                             product.offers.map(
-                                offer => <li className='font-semibold list-disc list-inside'>{offer}</li>
+                                offer => <li key={offer} className='font-semibold list-disc list-inside'>{offer}</li>
                             )
                         }
                     </ul>
