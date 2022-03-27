@@ -12,7 +12,7 @@ function Product() {
 
     return (
         <div className='container mt-10 mx-auto'>
-            <div className='grid grid-cols-3 gap-8'>
+            <div className='px-2 md:grid grid-cols-3 gap-8'>
                 <div className='col-span-1'>
                     <img src={product.image} />
                 </div>
