@@ -27,7 +27,11 @@ function Product() {
 
         cartItems.push({
             id: product.id,
-            quantity: quantity
+            quantity: quantity,
+            name: product.name,
+            slug: product.slug,
+            price: product.price,
+            image: product.image
         })
 
         localStorage.setItem('cartItems', JSON.stringify(cartItems))
@@ -44,8 +48,8 @@ function Product() {
                 <div className='col-span-2'>
                     <h3 className='text-4xl mb-10'>{product.name}</h3>
                     <p className='mb-10'>{product.description}</p>
-                    <p className='text-xl font-bold mb-10'>{product.price}</p>
-                    <input type="number" value={quantity} min={1} onChange={(e) => setQuantity(e.target.value)}/>
+                    <p className='text-xl font-bold mb-10'>${product.price}</p>
+                    <input type="number" value={quantity} placeholder="" min={1} onChange={(e) => setQuantity(e.target.value)}/>
                     <button onClick={addToCard} className='px-5 py-3 bg-green-600 text-white mb-10'>Add to Cart</button>
 
                     <ul>
@@ -57,6 +61,7 @@ function Product() {
                     </ul>
                 </div>
             </div>
+            
         </div>
     )
 }

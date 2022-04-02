@@ -9,7 +9,7 @@ function ProductCard(props) {
                 <Link to={`/${props.product.slug}`} className='font-bold'>
                     {props.product.name}
                 </Link>
-                <p>Price: {props.product.price}</p>
+                <p>Price: ${props.product.price}</p>
 
             </div>
         </div>
