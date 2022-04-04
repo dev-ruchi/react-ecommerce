@@ -8,6 +8,7 @@ import Home from './pages/Home'
 import Product from './pages/Product'
 import Navbar from './components/common/Navbar'
 import Cart from './pages/Cart'
+import Checkout from './pages/Checkout'
 
 ReactDOM.render(
   <React.StrictMode>
@@ -16,6 +17,7 @@ ReactDOM.render(
     <Routes>
       <Route path="/" element={<Home />}></Route>
       <Route path="/cart" element={<Cart />}></Route>
+      <Route path="/checkout/:id" element={<Checkout />}></Route>
       <Route path="/:slug" element={<Product />} />
     </Routes>
     </BrowserRouter>
